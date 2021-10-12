@@ -1,0 +1,548 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+/* ============== header ============= */
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+header .menu {
+  display: none;
+}
+header .logo img {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+header .primary-nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  transition: 0.3s;
+}
+header .primary-nav-bar li {
+  margin-right: 20px;
+}
+header .primary-nav-bar li:nth-child(7) {
+  margin-right: 650px;
+}
+header .primary-nav-bar a {
+  text-decoration: none;
+}
+header .primary-nav-bar a i {
+  margin-right: 30px;
+}
+header .secondary-nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+header .secondary-nav-bar li {
+  margin-right: 19px;
+}
+header .secondary-nav-bar i {
+  font-size: 18px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+header .secondary-nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ============== legend ============= */
+.legend {
+  width: 100%;
+  height: 620px;
+  background-image: url("../images/bacground.webp");
+  background-size: cover;
+  background-position: center;
+}
+.legend .content {
+  width: 400px;
+  position: absolute;
+  top: 27%;
+  left: 13%;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.legend .content .new {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+}
+.legend .content h1 {
+  margin-top: 10px;
+  font-size: 35px;
+}
+.legend .content p {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.legend .content .surface {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* ============== icons ============= */
+.icons .content {
+  width: 1000px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 70px;
+  grid-template-columns: repeat(6, 1fr);
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.icons .icon-1,
+.icons .icon-2,
+.icons .icon-3,
+.icons .icon-4,
+.icons .icon-5,
+.icons .icon-6 {
+  text-align: center;
+}
+.icons .icon-1:hover,
+.icons .icon-2:hover,
+.icons .icon-3:hover,
+.icons .icon-4:hover,
+.icons .icon-5:hover,
+.icons .icon-6:hover {
+  text-decoration: underline;
+}
+
+/* ============== windows products ============= */
+.windows-products .content {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2em;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.windows-products .content img {
+  width: 100%;
+}
+.windows-products .content a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.windows-products .content .new-yellow {
+  background-color: yellow;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.windows-products .content .item-3 img {
+  margin-bottom: 45px;
+}
+.windows-products .content .item-3 .pre-order {
+  margin-right: 20px;
+}
+.windows-products .content .item-4 img {
+  margin-bottom: 45px;
+}
+.windows-products .content .pre-order {
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  transition: 0.1s ease;
+}
+.windows-products .content .pre-order:hover {
+  border-bottom: 3px solid blue;
+}
+
+/* ============== game pass ============= */
+.game-pass .game-pass-background {
+  background-image: url("../images/game-pass.webp");
+  background-size: cover;
+  height: 600px;
+}
+.game-pass .game-pass-background .content {
+  width: 400px;
+  margin-top: 100px;
+  position: relative;
+  top: 40%;
+  left: 8%;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.game-pass .game-pass-background .content h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.game-pass .game-pass-background .content p {
+  color: white;
+  margin-bottom: 30px;
+}
+.game-pass .game-pass-background .content .join-btn {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* ============== for business ============= */
+.for-business {
+  margin-top: 100px;
+}
+.for-business .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2em;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.for-business .content img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.for-business .content .new {
+  background-color: yellow;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.for-business .content h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.for-business .content p {
+  margin-bottom: 10px;
+}
+.for-business .content .blue {
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  transition: 0.1s ease;
+}
+.for-business .content .blue:hover {
+  border-bottom: 3px solid blue;
+}
+
+/* ============== covid 19 response ============= */
+.covid-19 {
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+  background-color: #e6e6e6;
+  padding-top: 30px;
+}
+.covid-19 .content {
+  text-align: center;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.covid-19 h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.covid-19 p {
+  margin-bottom: 10px;
+}
+.covid-19 .learn-more {
+  text-decoration: none;
+  color: black;
+}
+.covid-19 .learn-more:hover {
+  border-bottom: 3px solid black;
+}
+
+/* ============== microsoft network ============= */
+.microsoft-network {
+  margin-top: 100px;
+  background-image: url("../images/girl.jpeg");
+  width: 100%;
+  background-size: cover;
+  height: 500px;
+}
+.microsoft-network .content {
+  width: 300px;
+  position: relative;
+  top: 30%;
+  left: 5%;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.microsoft-network .content h1 {
+  margin-bottom: 10px;
+}
+.microsoft-network .content p {
+  margin-bottom: 30px;
+}
+.microsoft-network .content .learn-more {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* ============== social media ============= */
+.social-media {
+  margin-top: 100px;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.social-media .follow-microsoft {
+  display: flex;
+  cursor: pointer;
+}
+.social-media .follow-microsoft p {
+  margin-right: 20px;
+}
+.social-media .follow-microsoft .fa-facebook-square {
+  font-size: 30px;
+  margin-right: 30px;
+  color: blue;
+}
+.social-media .follow-microsoft .fa-twitter-square {
+  font-size: 30px;
+  margin-right: 30px;
+  color: lightskyblue;
+}
+.social-media .follow-microsoft .fa-youtube-square {
+  font-size: 30px;
+  margin-right: 30px;
+  color: red;
+}
+.social-media .follow-microsoft .fa-instagram {
+  font-size: 30px;
+  margin-right: 30px;
+  color: royalblue;
+}
+
+/* ============== footer ============= */
+footer {
+  margin-top: 100px;
+  width: 119%;
+  margin-left: -153px;
+  margin-right: 100px;
+  background-color: #f2f2f2;
+  padding: 40px 120px;
+}
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #616161;
+}
+footer .footer-content h5 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+footer .footer-content ul {
+  list-style-type: none;
+}
+footer .footer-content li {
+  margin-bottom: 20px;
+}
+footer .footer-content a {
+  text-decoration: none;
+  color: #616161;
+  font-size: 13px;
+}
+footer .footer-content a:hover {
+  text-decoration: underline;
+}
+footer .copy-rights ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+footer .copy-rights ul a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #616161;
+  font-size: 13px;
+}
+footer .copy-rights ul a:hover {
+  text-decoration: underline;
+}
+
+/* ============== For Mobile ============= */
+@media (max-width: 600px) {
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  header .menu {
+    display: block;
+  }
+  header .menu i {
+    font-size: 25px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    cursor: pointer;
+  }
+  header .logo img {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  header .primary-nav-bar ul {
+    display: none;
+  }
+  header .secondary-nav-bar ul {
+    display: none;
+  }
+
+  /* legend */
+  .legend {
+    width: 100%;
+    height: 270px;
+    background-image: url("../images/bacground.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .legend .content {
+    width: 100%;
+    position: absolute;
+    top: 40.6%;
+    left: 0%;
+    background-color: #e6e6e6;
+    padding: 30px;
+  }
+
+  /* icons */
+  .icons .content {
+    width: 100%;
+    margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .icons .icon-1,
+.icons .icon-2,
+.icons .icon-3,
+.icons .icon-4,
+.icons .icon-5,
+.icons .icon-6 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .icons p {
+    margin-left: 20px;
+  }
+
+  /* game pass */
+  .game-pass .game-pass-background {
+    background-image: url("../images/game-pass.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+  .game-pass .game-pass-background .content {
+    width: 100%;
+    background-color: #616161;
+    margin-top: 100px;
+    padding: 30px;
+    position: relative;
+    top: 47%;
+    left: 0%;
+  }
+
+  /* windows products */
+  .windows-products .content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* for business */
+  .for-business {
+    margin-top: 150px;
+  }
+  .for-business .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* covid 19 response */
+  .covid-19 {
+    margin-top: 100px;
+    width: 100%;
+    height: 280px;
+    background-color: #e6e6e6;
+    padding-top: 30px;
+  }
+  .covid-19 .content {
+    text-align: center;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  /* microsoft network */
+  .microsoft-network {
+    margin-top: 100px;
+    background-image: url("../images/girl.jpeg");
+    background-position: right;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+  }
+  .microsoft-network .content {
+    width: 100%;
+    background-color: #616161;
+    padding: 30px;
+    position: relative;
+    top: 100%;
+    left: 0%;
+  }
+
+  /* social media */
+  .social-media {
+    margin-top: 400px;
+  }
+  .social-media .follow-microsoft {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  /* foooter */
+  footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-left: 0.3px;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #616161;
+  }
+  footer .copy-rights {
+    border-top: 1px solid #616161;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  footer .copy-rights ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
